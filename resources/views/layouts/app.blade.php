@@ -53,6 +53,13 @@
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
                         @else
+                            <li>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>New activity
+                                    </button>
+                                </div>
+                            </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
